@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <script src="https://unpkg.com/html2pdf.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+  <title>Bi Forecast</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+  <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <head>
+    <title>Cálculo de hipotecas/préstamos</title>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Resi
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/resi-free-bootstrap-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Bi Forecast.</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Calculadora de Prestamos</a></li>
+          <li><a class="nav-link scrollto" href="#services">Predicción de - Tasas de Interés</a></li>
+          <li><a class="nav-link scrollto " href="#faq">Preguntas Frecuentes</a></li>
+          </li>
+          <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
+          <li><a class="getstarted scrollto" href="#services">Empezar</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-2 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>Un modelo predictivo de tasas de interés Bancario gratuito para todos los guatemaltecos</h1>
+          <ul>
+            <li><i class="ri-check-line"></i> Predicción de tasas de interés para Ahorro</li>
+            <li><i class="ri-check-line"></i> Predicción de tasas de interés para Prestamos</li>
+            <li><i class="ri-check-line"></i> Calculadora de prestamos</li>
+          </ul>
+          <div class="mt-3">
+            <a href="#about" class="btn-get-started scrollto">Utilizar Calculadora de prestamos</a>
+            <a href="#services" class="btn-get-quote">Empezar a utilizar el modelo predictivo</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row content">
+          
+          <div class="col-lg-6 pt-4 pt-lg-0">
+              <div class="container">
+                  <div class="section-title">
+                      <h2>Cálculo de hipotecas/préstamos</h2>
+                  </div>
+
+<body>
+  <div class="container mt-5">
+    <form>
+        <div class="row mb-3">
+            <label for="importe" class="col-sm-3 col-form-label text-end">Importe:</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="importe" name="importe" maxlength="9" value="10000">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="anos" class="col-sm-3 col-form-label text-end">Años:</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="anos" name="anos" maxlength="2" value="1">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="interes" class="col-sm-3 col-form-label text-end">Interés:</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="interes" name="interes" maxlength="9" value="10">
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-sm-"></div>
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+            </div>
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-secondary" onclick="exportarPDF()" >Exportar a PDF</button>
+            </div>
+            <div class="col-sm-4">
+                <button type="button" class="btn btn-secondary" onclick="exportarXLSX()" >Exportar a XLSX</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+    <div id="resultado"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      const jsPDF = window.jspdf;
+
+      function calcular() {
+    let deuda = parseFloat(document.querySelector("input[name=importe]").value);
+    let anos = parseInt(document.querySelector("input[name=anos]").value);
+    let interes = parseFloat(document.querySelector("input[name=interes]").value);
+    const resultado = document.getElementById("resultado");
+
+    // hacemos los calculos...
+    interes = (interes / 100) / 12;
+    const m = (deuda * interes * (Math.pow((1 + interes), (anos * 12)))) / ((Math.pow((1 + interes), (anos * 12))) - 1);
+
+    resultado.innerHTML = "<div>Capital Inicial: " + deuda.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " Quetzales \
+    <br>Cuota a pagar mensualmente: " + m.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " Quetzales</div>";
+
+    // creamos un objeto table donde poner el resultado
+    const table = document.createElement("table");
+    table.classList.add("table", "table-bordered", "table-hover"); // Agregar clases de Bootstrap
+
+    // titulo de la tabla
+    let tr = document.createElement("tr");
+    for (let text of ["Mes", "Intereses", "Abono a Capital", "Cuota Mensual", "Capital Pendiente"]) {
+        let th = document.createElement("th");
+        th.classList.add("text-center"); // Centrar texto
+        th.style.backgroundColor = "#5a5af3";
+        th.style.color = "white"; // Letras blancas
+        let txt = document.createTextNode(text);
+        th.appendChild(txt);
+        tr.appendChild(th);
+    }
+
+    table.appendChild(tr);
+
+    // contenido de la tabla
+    let totalInt = 0;
+    for (let i = 1; i <= anos * 12; i++) {
+        totalInt = totalInt + (deuda * interes);
+
+        tr = document.createElement("tr");
+        let td = document.createElement("td");
+        let txt = document.createTextNode(i);
+        td.appendChild(txt);
+        tr.appendChild(td);
+        td = document.createElement("td");
+        txt = document.createTextNode((deuda * interes).toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+        td.appendChild(txt);
+        tr.appendChild(td);
+        td = document.createElement("td");
+        txt = document.createTextNode((m - (deuda * interes)).toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+        td.appendChild(txt);
+        tr.appendChild(td);
+        td = document.createElement("td");
+        txt = document.createTextNode(m.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+        td.appendChild(txt);
+        tr.appendChild(td);
+        deuda = deuda - (m - (deuda * interes));
+        td = document.createElement("td");
+        if (deuda < 0) {
+            txt = document.createTextNode("0");
+        } else {
+            txt = document.createTextNode(deuda.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+        }
+        td.appendChild(txt);
+        tr.appendChild(td);
+
+        table.appendChild(tr);
+    }
+
+    resultado.appendChild(table);
+    let div = document.createElement("div");
+    let txt = document.createTextNode("Pago total de intereses: " + totalInt.toLocaleString("es-ES", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " Quetzales");
+    div.appendChild(txt);
+    resultado.appendChild(div);
+
+    // Después de calcular, mostrar la tabla
+    mostrarTabla();
+}
+
+        function mostrarTabla() {
+            // Después de mostrar la tabla, puedes habilitar los botones de exportar
+            document.querySelector("input[value='Exportar a PDF']").disabled = false;
+            document.querySelector("input[value='Exportar a XLSX']").disabled = false;
+        }
+
+        function exportarPDF() {
+    const resultado = document.getElementById("resultado");
+    const table = resultado.querySelector("table");
+    // Configurar opciones para html2pdf
+    const options = {
+        margin: 10,
+        filename: 'Cuota de Prestamos Bi Forecasting.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+    };
+
+    // Crear el PDF usando html2pdf
+    html2pdf(table, options);
+}
+
+
+
+
+        function exportarXLSX() {
+            const resultado = document.getElementById("resultado");
+            const table = resultado.querySelector("table");
+            const ws = XLSX.utils.table_to_sheet(table);
+            const wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, "Tabla");
+            XLSX.writeFile(wb, "tabla.xlsx");
+        }
+    </script>
+
+</body>
+</div>
+</html>
+
+
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i>Nota: Considerar que estos valores son netamente de referencia y no son oficiales.</li>
+              <li><i class="ri-check-double-line"></i> Cada institución bancaria puede añadir costos extras por costos de desembolso u otros. </li>
+              <li><i class="ri-check-double-line"></i> Puede utilizar nuestro modelo predictivo de la página para considerar que tasa de interés podría llegar a obtener </li>
+            
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+   
+    
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Predicción de Tasas de Interés Bancario </h2>
+          <p>Nuestro modelo predictivo esta basado en información recopilada de la Superintendencia de Bancos de Guatemala y pretende brindarle una sugerencia sobre que institución bancaria se acomoda mejor a sus necesidades en base a su profesión, garantía a utilizar y fecha del mes en el que piensa obtener su crédito o iniciar su ahorro.</p>
+        </div>
+
+        <div class="row">
+          <div class="content col-xl-5 d-flex flex-column justify-content-center">
+            <iframe title="Bi Forecasting" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiYTY3MDJmMjYtM2M0NC00OWU0LThiYmUtZWFiZjUwYmM4ODNlIiwidCI6IjVmNTNiNGNlLTYzZDQtNGVlOC04OGQyLTIyZjBiMmQ0YjI3YSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe> </div>
+        </div>
+
+      </div>
+      
+    </section><!-- End Services Section -->
+
+ 
+<div class="section-title"> 
+  <ul>
+    <li><i class="ri-check-double-line"></i>Nota: Considerar que estos valores son netamente de referencia y no son datos oficiales de ninguna institución bancaria.</li>
+    <li><i class="ri-check-double-line"></i> Cada institución bancaria define sus tasas de interés mensual o anualmente en base a sus propios criterios. </li>
+    <li><i class="ri-check-double-line"></i> Puede utilizar nuestros datos predictivos en conjunto con la calculadora de prestamos incluida para estimar sus cuotas</li>
+  
+  </ul>
+  <p><input type="button" class="btn btn-primary" value="Exportar Página completa incluido el modelo y calculadora a PDF" onclick="exportarPagina()" ></p></div>
+  
+
+<script>
+function exportarPagina() {
+  window.print();
+}
+</script>
+
+    <!-- ======= About Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Equipo detrás de Bi Forecast</h2>
+          <p>Este proyecto se creo como parte del pensum de la Universidad Mariano Gálvez del curso llamado "Proyecto de Graduación"</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.png" class="img-fluid" alt="">
+                
+              </div>
+              <div class="member-info">
+                <h4>Gabriel Samayoa</h4>
+                <span>Desarrollador del Modelo y Aplicación Web</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+               
+              </div>
+              <div class="member-info">
+                <h4>Sheyla Esquivel</h4>
+                <span>Asesora de Proyecto</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+               
+              </div>
+              <div class="member-info">
+                <h4>Evelyn Aguilar</h4>
+                <span>Asesora de Proyecto</span>
+              </div>
+            </div>
+          </div>
+
+         
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Preguntas Frecuentes</h2>
+        </div>
+
+        <ul class="faq-list">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">¿Para que me sirve la calculadora de prestamos? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                La calculadora de prestamos te da una idea de cuanto podría ser la cuota de tú prestamo en base a cierta tasa de interés y tiempo en años.  
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">¿Como funciona el modelo predictivo? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                El modelo predictivo funciona a base de datos historicos desde 2013 recopilados desde la Superintendencia de Bancos de Guatemala. Creando una predicción de cuanto podría ser la tasa de interés para adquirir un crédito o abrir una cuenta de ahorro.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">¿Que significa Bi Forecast? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Bi Forecast significa = Business Intelligence Forecast lo cual al español se traduce como Pronostico de Inteligencia de Negocios. El nombre surge del uso de las herramientas y tecnologías que utiliza.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">¿Es posible imprimir la información de la calculadora o el modelo predictivo? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Sí, lo puedes hacer usando los botones que aparecen junto a la calculadora y al modelo predictivo. La calculadora te dejo exportarlo a PDF y Excel y el Modelo te permite exportar a PDF toda la página para que uses la calculadora e imprimas tú tabla de pagos estimada.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">¿Realmente son precisas las tasas de interés que da el modelo? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Son predicciones en base a datos historicos por lo que solamente se deben usar de referencia. Sin embargo al ser en base al promedio ponderado de las tasas de interés que reportan los bancos a la Superintendencia de Bancos sí puede ser un valor cercano al real.
+              </p>
+              <p>
+                Siempre debemos considerar que los bancos ofrecen beneficios extras a sus clientes en base a los montos y antiguedad del cliente.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+  
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Gabriel Samayoa</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/resi-free-bootstrap-html-template/ -->
+          Basic Template Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+      
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  form {width:250px;}
+  form>div>span {width:100px;display: inline-block;text-align:left;}
+  form input {width:150px;}
+  form>div {text-align:center;}
+  table>tr>th, table>tr>td {text-align:right;}
+  </style>
+
+</html><script>
+  function calcular() {
+      let deuda=parseFloat(document.querySelector("input[name=importe]").value);
+      let anos=parseInt(document.querySelector("input[name=anos]").value);
+      let interes=parseFloat(document.querySelector("input[name=interes]").value);
+      const resultado=document.getElementById("resultado");
+   
+      // hacemos los calculos...
+      interes=(interes/100)/12;
+      const m=(deuda*interes*(Math.pow((1+interes),(anos*12))))/((Math.pow((1+interes),(anos*12)))-1);
+   
+      resultado.innerHTML="<div>Capital Inicial: "+deuda.toLocaleString("es-ES", {minimumFractionDigits: 2, maximumFractionDigits:2})+" € \
+          <br>Cuota a pagar mensualmente: "+m.toLocaleString("es-ES", {minimumFractionDigits: 2, maximumFractionDigits:2})+" €</div>";
+   
+      // cramos un objeto table donde poner el resultado
+      const table=document.createElement("table");
+      table.setAttribute("border",1);
+      table.setAttribute("cellpadding",5);
+      table.setAttribute("cellspacing",0);
+   
+      // titulo de la tabla
+      let tr=document.createElement("tr");
+      for (let text of ["Mes", "Intereses", "Amortización", "Capital Pendiente"]) {
+          let th=document.createElement("th");
+          let txt=document.createTextNode(text);
+          th.appendChild(txt);
+          tr.appendChild(th);
+      }
+      table.appendChild(tr);
+   
+      // contenido de la tabla
+      let totalInt=0;
+      for (let i=1; i<=anos*12; i++) {
+          totalInt=totalInt+(deuda*interes);
+   
+          tr=document.createElement("tr");
+          let td=document.createElement("td");
+          let txt=document.createTextNode(i);
+          td.appendChild(txt);
+          tr.appendChild(td);
+          td=document.createElement("td");
+          txt=document.createTextNode((deuda*interes).toLocaleString("es-ES", {minimumFractionDigits: 2, maximumFractionDigits:2}));
+          td.appendChild(txt);
+          tr.appendChild(td);
+          td=document.createElement("td");
+          txt=document.createTextNode((m-(deuda*interes)).toLocaleString("es-ES", {minimumFractionDigits: 2, maximumFractionDigits:2}));
+          td.appendChild(txt);
+          tr.appendChild(td);
+          deuda=deuda-(m-(deuda*interes));
+          td=document.createElement("td");
+          if (deuda<0) {
+              txt=document.createTextNode("0");
+          }else{
+              txt=document.createTextNode(deuda.toLocaleString("es-ES", {minimumFractionDigits: 2, maximumFractionDigits:2}));
+          }
+          td.appendChild(txt);
+          tr.appendChild(td);
+          table.appendChild(tr);
+      }
+   
+      resultado.appendChild(table);
+      let div=document.createElement("div");
+      let txt=document.createTextNode("Pago total de intereses : "+totalInt.toLocaleString("es-ES", {minimumFractionDigits: 2, maximumFractionDigits:2})+" €");
+      div.appendChild(txt);
+      resultado.appendChild(div);
+  }
+  </script>
+  
